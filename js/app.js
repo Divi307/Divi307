@@ -290,11 +290,12 @@ btn.addEventListener(
 "click",
 (e)=>{
 
+if(btn.getAttribute("href") === "#"){
 e.preventDefault();
-
 overlay.classList.add(
 "show"
 );
+}
 
 });
 
